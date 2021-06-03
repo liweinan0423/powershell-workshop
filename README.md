@@ -1,4 +1,7 @@
 ```bash
+
+./genkey.sh
+
 docker compose up remote -d
 
 docker compose run local
