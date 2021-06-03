@@ -1,5 +1,5 @@
 ```bash
-docker compose up -d
+docker compose up remote -d
 
 docker compose run local
 
