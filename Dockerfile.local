@@ -1,0 +1,2 @@
+FROM mcr.microsoft.com/powershell
+ADD id_rsa /root/.ssh/id_rsa

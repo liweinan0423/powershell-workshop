@@ -1,0 +1,9 @@
+FROM mcr.microsoft.com/powershell
+
+RUN apt update && apt install -y ssh && mkdir /run/sshd
+
+COPY id_rsa.pub /id_rsa.pub
+
+RUN mkdir /root/.ssh && cat /id_rsa.pub >> /root/.ssh/authorized_keys
+
+ENTRYPOINT [ "/usr/sbin/sshd", "-D" ]
