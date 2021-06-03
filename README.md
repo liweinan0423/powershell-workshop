@@ -5,7 +5,7 @@ docker compose run local
 
 
 # in local container:
-ssh remote
+ssh remote pwsh
 ```
 
 
